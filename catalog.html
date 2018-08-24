@@ -2,15 +2,15 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>catalog</title>
+		<title>HTML Academy: Девайс - каталог</title>
 	</head>
 	<body>
-		<header class="main-header">
-			<a href="#" class="logo">Device</a>
+		<header class="header">
+			<a href="index.html" class="logo">Device</a>
 			<div>
 				<form>
 					<input type="text" placeholder="Поиск по сайту">
-					<input type="submit" value="Найти">
+					<button>Найти</button>
 				</form>
 
 				<div class="user">
@@ -35,8 +35,8 @@
 		
 		<main class="container">
 			<section class="catalog-title">
-				<h1 class="visual-hidden">Моноподы для селфи</h1>
-					<ul class="breadcrums">
+				<h1 class="main-title">Моноподы для селфи</h1>
+					<ul class="breadcrumbs">
 						<li><a href="#">Главная</a></li>
 						<li><a href="#">Каталог товаров</a></li>
 						<li><a href="#">Моноподы для селфи</a></li>
@@ -49,6 +49,8 @@
 					<h3 class="visual-hidden">Стоимость</h3>
 					<div class="min"></div>
 					<div class="max"></div>
+					<div class="green-line"></div>
+					<div class="white-line"></div>
 				</div>
 				<div class="sorting">
 					<h3 class="visual-hidden">Сортировка:</h3>
@@ -76,7 +78,7 @@
 					<input type="checkbox" id="pink">
 					<label for="pink">Розовый</label>
 				</div>
-				<div class="blutooth">
+				<div class="bluetooth">
 					<h3 class="visual-hidden">Blutooth</h3>
 					<input type="radio" name="blutooth-radio" id="yes">
 					<label for="yes">Да</label>
@@ -88,22 +90,22 @@
 			
 			<section class="product-catalog">
 				<div class="product-catalog-item">
-					<img src="#" alt="Любительская селфи-палка" class="product-catalog-item-image">
+					<img src="#" alt="Любительская селфи-палка" class="product-catalog-item-image" width="360" height="382">
 					<span class="name">Любительская селфи-палка</span>
 					<span class="cost">500 руб.</span>
 				</div>
 				<div class="product-catalog-item">
-					<img src="#" alt="Профессиональная селфи-палка" class="product-catalog-item-image">
+					<img src="#" alt="Профессиональная селфи-палка" class="product-catalog-item-image" width="360" height="382">
 					<span class="name">Профессиональная селфи-палка</span>
 					<span class="cost">1500 руб.</span>
 				</div>
 				<div class="product-catalog-item">
-					<img src="#" alt="Непотопляемая селфи-палка" class="product-catalog-item-image">
+					<img src="#" alt="Непотопляемая селфи-палка" class="product-catalog-item-image" width="360" height="382">
 					<span class="name">Непотопляемая селфи-палка</span>
 					<span class="cost">2500 руб.</span>
 				</div>
 				<div class="product-catalog-item">
-					<img src="#" alt="Селфи-палка «Следуй за мной»" class="product-catalog-item-image">
+					<img src="#" alt="Селфи-палка «Следуй за мной»" class="product-catalog-item-image" width="360" height="382">
 					<span class="name">Селфи-палка «Следуй за мной»</span>
 					<span class="cost">9400 руб.</span>
 				</div>
@@ -117,7 +119,7 @@
 			</section>
 		</main>
 		
-		<footer class="main-footer">
+		<footer class="footer">
 			<a class="footer-logo">Device</a>
 			<div class="footer-user">
 				<a href="#">Войти</a>
@@ -135,11 +137,13 @@
 				<a href="#">Гарантия</a>
 				<a href="#">Контакты</a>
 			</div>
+			<div class="yellow-block"></div>
 			<div class="footer-social">
 				<ul>
 					<li>Facebook</li>
 					<li>Instagramm</li>
 					<li>Twitter</li>
+					<li>HTMLAcademy</li>
 				</ul>
 			</div>
 		</footer>
