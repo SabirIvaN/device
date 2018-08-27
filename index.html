@@ -8,7 +8,7 @@
 		<header class="main-header">
 			<a href="index.html" class="logo">Device</a>
 			<div>
-				<form>
+				<form action="#" method="POST" autocomplete="on">
 					<input type="text" placeholder="Поиск по сайту">
 					<button>Найти</button>
 				</form>
@@ -32,11 +32,11 @@
 			</div>
 		</header>
 
-		<main class="container">
+		<main>
 			
 			<section class="carousel">
-				<input type="radio" name="radioButton" id="first" checked>
-				<label for="first"></label>
+				<input type="radio" name="radioButton" id="first-product" checked>
+				<label for="first-product"></label>
 				<div class="first-product">
 					
 					<img src="#" alt="Фото товара" width="400" height="576">
@@ -68,8 +68,8 @@
 					
 				</div>
 				
-				<input type="radio" name="radioButton" id="second">
-				<label for="second"></label>
+				<input type="radio" name="radioButton" id="second-product">
+				<label for="second-product"></label>
 				<div class="second-product">
 					
 					<img src="#" alt="Фото товара">
@@ -90,8 +90,8 @@
 					
 				</div>
 				
-				<input type="radio" name="radioButton" id="third">
-				<label for="third"></label>
+				<input type="radio" name="radioButton" id="third-product">
+				<label for="third-product"></label>
 				<div class="third-product">
 					
 					<img src="#" alt="Фото товара">
@@ -153,18 +153,28 @@
 			
 			<section class="we">
 				<ul class="we-list">
-					<li class="we-list-item button we-list-item-current">Доставка</li>
-					<li class="we-list-item">Гарантия</li>
-					<li class="we-list-item">Кредит</li>
+					<li class="we-item-list button we-item-list-current">
+						<input type="radio" name="radioButton" id="we-list-first" checked>
+						<label for="we-list-first">Доставка</label>
+					</li>
+					<li class="we-item-list">
+						<input type="radio" name="radioButton" id="we-list-second" checked>
+						<label for="we-list-second">Гарантия</label>
+					</li>
+					<li class="we-item-list">
+						<input type="radio" name="radioButton" id="we-list-third" checked>
+						<label for="we-list-third">Кредит</label>
+					</li>
 				</ul>
-			</section>
-			
-			<section class="we-item">
-				<div class="we-item-list">
-					<h2 class="visuall-hidden">Доставка</h2>
-					<p class="we-text">
-						Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-					</p>
+
+				<div class="we-item">
+					<div class="we-item-list-first">
+						<h2 class="visuall-hidden">Доставка</h2>
+						<p class="we-text">
+							Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+						</p>
+					</div>
+					<div class="we-item-list-second"
 				</div>
 			</section>
 			
@@ -211,25 +221,19 @@
 				<a href="#">Сравнить</a>
 				<a href="#">Корзина</a>
 			</div>
-			<div class="footer-address">
-				г. Москва, ул. Строителей, 15
-			</div>
-			<div class="footer-phone">
-				Тел.: +7 (495) 495-95-95
-			</div>
+			<span class="footer-address">г. Москва, ул. Строителей, 15</span>
 			<div class="main-footer-menu">
 				<a href="#">Доставка</a>
 				<a href="#">Гарантия</a>
 				<a href="#">Контакты</a>
 			</div>
+			<span class="footer-phone">Тел.: +7 (495) 495-95-95</span>
 			<div class="yellow-block"></div>
 			<div class="footer-social">
-				<ul>
-					<li>Facebook</li>
-					<li>Instagramm</li>
-					<li>Twitter</li>
-					<li>HTMLAcademy</li>
-				</ul>
+				<a href="#">Facebook</a>
+				<a href="#">Instagramm</a>
+				<a href="#">Twitter</a>
+				<a href="#">HTMLAcademy</a>
 			</div>
 		</footer>
 	</body>
