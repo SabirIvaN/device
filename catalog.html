@@ -20,9 +20,24 @@
 					<a href="#">Корзина</a>
 				</div>
 				
-				<div>
-					<a href="#">Каталог товаров</a>
-					<div></div>
+				<div class="catalog">
+					<a href="catalog.html">Каталог товаров</a>
+					<div class="catalog-list">
+						<div class="dropped">
+							<div class="dropped-row">
+								<a href="#">Виртуальная реальность</a>
+								<a href="#">Моноподы для селфи</a>
+								<a href="#">Экшн-камеры</a>
+							</div>
+							<div class="dropped-row">
+								<a href="#">Фитнес-браслеты</a>
+								<a href="#">Умные часы</a>
+							</div>
+							<div class="#">
+								<a href="#">Квадракоптеры</a>
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<div class="main-navigator">
@@ -96,26 +111,31 @@
 
 					<!-- перечень товаров -->
 					<section class="product-catalog">
-						<div class="product-catalog-item">
+						<div class="modal-buttons">
+							<input type="submit" class="button" value="В корзину">
+							<a href="#" class="link">Добавить к сравнению</a>
+						</div>
+						<a class="product-catalog-item">
 							<img src="#" alt="Любительская селфи-палка" class="product-catalog-item-image" width="360" height="382">
 							<span class="name">Любительская селфи-палка</span>
 							<span class="cost">500 руб.</span>
-						</div>
-						<div class="product-catalog-item">
+						</a>
+						<a class="product-catalog-item">
 							<img src="#" alt="Профессиональная селфи-палка" class="product-catalog-item-image" width="360" height="382">
 							<span class="name">Профессиональная селфи-палка</span>
 							<span class="cost">1500 руб.</span>
-						</div>
-						<div class="product-catalog-item">
+						</a>
+						<a class="product-catalog-item">
 							<img src="#" alt="Непотопляемая селфи-палка" class="product-catalog-item-image" width="360" height="382">
 							<span class="name">Непотопляемая селфи-палка</span>
 							<span class="cost">2500 руб.</span>
-						</div>
-						<div class="product-catalog-item">
+						</a>
+						<a class="product-catalog-item">
+							<img src="#" alt="Новинка" class="new" width="60" height="60">
 							<img src="#" alt="Селфи-палка «Следуй за мной»" class="product-catalog-item-image" width="360" height="382">
 							<span class="name">Селфи-палка «Следуй за мной»</span>
 							<span class="cost">9400 руб.</span>
-						</div>
+						</a>
 						<div class="paginator">
 							<a href="#">Назад</a>
 							<a href="#">1</a>
@@ -152,12 +172,6 @@
 		</footer>
 	</body>
 </html>
-
-<div class="modal-section-map">
-	<!-- здесь будет карта -->
-	
-	<span class="close">X</span>
-</div>
 	
 <div class="modal-section-write">
 	<form action="#" method="post" autocomplete="on">
