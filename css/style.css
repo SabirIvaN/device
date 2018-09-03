@@ -34,10 +34,20 @@
 
 /* CSS Document */
 
+html { 
+	box-sizing: border-box; 
+}
+
+*, *::before, *::after { 
+	box-sizing: inherit; 
+}
+
 body {
-	min-width: 1240px;
+	margin: 0;
+	padding: 0;
 	font-weight: 400;
-	font-size: 15px;
+	font-size: 0;
+	line-height: 1;
 	font-family: "OpenSans Light", sans-serif;
 }
 
@@ -55,34 +65,29 @@ img {
 	max-width: 100%;
 }
 
-.container {
-	width: 1160px;
-	margin: 0 auto;
-}
-
 /* header */
 
 .header {
-	position: relative;
-	min-height: 265px;
-	margin: 40px 0 0 0;
-	padding: 34px 0 0 0;
+	width: 1160px;
+	margin: 0 auto;
+	padding: 25px 60px 0;
 	background-color: #f7e296;
 }
 
-.header-logo {
-	position: absolute;
-	top: -30px;
-	left: 57px;
-	z-index: 0;
-	font-size: 48px;
-	font-family: "Gilroy ExtraBold", sans-serif;
-	color: #000000;
-	text-decoration: none;
+.header__logo {
+	display: inline-block;
 }
 
-.header-content {
-	padding: 0 60px 0 60px;
+.header__content {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-between;
+}
+
+.header__block {
+	width: 50%;
+	font-size: 15px;
 }
 
 /* main */
