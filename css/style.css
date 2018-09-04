@@ -96,14 +96,16 @@ img {
 }
 
 .header__content {
-	width: 1040px;
 	padding: 34px 60px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .header__form {
-	width: 450px;
 	display: flex;
 	margin: auto 0;
+	width: 450px;
 }
 
 .header__form-input {
@@ -163,9 +165,27 @@ img {
 	opacity: 0.3;
 }
 
+.header__block {
+	width: 50%;
+	display: flex;
+	margin: auto 0;
+}
+
 .header__user-area {
 	display: flex;
-	align-items: center;
+	font-size: 15px;
+}
+
+.header__user-area-block {
+	position: relative;
+	margin: auto 0 auto auto;
+}
+
+.header__user-area-link {
+	font-family: "OpenSans Light", sans-serif;
+	font-size: 15px;
+	color: #000000;
+	text-decoration: none;
 }
 
 /* main */
