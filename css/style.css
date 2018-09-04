@@ -68,26 +68,104 @@ img {
 /* header */
 
 .header {
+	position: relative;
 	width: 1160px;
-	margin: 0 auto;
-	padding: 25px 60px 0;
-	background-color: #f7e296;
+	margin: 40px auto 0 auto;
+	background-color: #ffe294;
+	color: #000000;
 }
 
 .header__logo {
-	display: inline-block;
+	position: absolute;
+	top: -24px;
+	left: 57px;
+	font-size: 48px;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	font-family: "Gilroy ExtraBold", sans-serif;
+	text-decoration: none;
+	color: #000000;
+}
+
+.header__logo:hover {
+	color: #444444;
+}
+
+.header__logo:active {
+	color: #666666;
 }
 
 .header__content {
-	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
-	justify-content: space-between;
+	width: 1040px;
+	padding: 34px 60px;
 }
 
-.header__block {
-	width: 50%;
+.header__form {
+	width: 450px;
+	display: flex;
+	margin: auto 0;
+}
+
+.header__form-input {
+	border: 0;
+	width: 355px;
+	height: 45px;
+	background-color: transparent;
+	color: #000000;
+	padding-left: 40px;
+	opacity: 0.3;
+	font-family: "OpenSans Light", sans-serif;
 	font-size: 15px;
+}
+
+.header__form::before {
+	content: "";
+	position: absolute;
+	top: 50px;
+	left: 65px;
+	width: 16px;
+	height: 16px;
+	background: url(../img/search.svg);
+}
+
+.header__form-button {
+	display: none;
+	width: 85px;
+	height: 45px;
+	border: 2px solid #000000;
+	background-color: transparent;
+	font-family: "OpenSans Light", sans-serif;
+	font-size: 15px;
+}
+
+.header__form-input:hover {
+	opacity: 0.6;
+}
+
+.header__form-input:focus {
+	border-bottom: 2px solid #000000;
+	opacity: 1;
+	outline: 1px transparent;
+}
+
+.header__form-input:focus + .header__form-button {
+	display: block;
+}
+
+.header__form-button:hover {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+.header__form-button:active {
+	background-color: #000000;
+	color: #FFFFFF;
+	opacity: 0.3;
+}
+
+.header__user-area {
+	display: flex;
+	align-items: center;
 }
 
 /* main */
