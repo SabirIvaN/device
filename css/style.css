@@ -73,13 +73,13 @@ body {
 	color: #000000;
 }
 
-.header__logo:hover {
-	color: #444444;
-}
+	.header__logo:hover {
+		color: #444444;
+	}
 
-.header__logo:active {
-	color: #666666;
-}
+	.header__logo:active {
+		color: #666666;
+	}
 
 .header__content {
 	padding: 34px 60px;
@@ -350,10 +350,10 @@ body {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	
-    padding-top: 55px;
-	padding-left: 100px;
-	padding-right: 105px;
-    padding-bottom: 55px;
+    padding-top: 67px;
+	padding-left: 140px;
+	padding-right: 140px;
+    padding-bottom: 79px;
 	
     background-color: #464646;
 }
@@ -368,7 +368,7 @@ body {
 	text-transform: uppercase;
 	font-family: "Gilroy ExtraBold", sans-serif;
 	
-	margin-bottom: 36px;
+	margin-bottom: 40px;
 }
 
 .footer__user {
@@ -379,7 +379,7 @@ body {
 	align-items: flex-start;
 	
 	padding-top: 12px;
-	margin-bottom: 36px;
+	margin-bottom: 40px;
 }
 
 .footer__user-link {
@@ -395,9 +395,12 @@ body {
 	.footer__user-link--login::before {
 		content: "";
 		
-		position: absolute;
+		position: relative;
+		z-index: 3;
 		
-		right: 408px;
+		top: 4px;
+		
+		padding-right: 25px;
 		
 		width: 16px;
 		height: 15px;
@@ -408,9 +411,12 @@ body {
 	.footer__user-link--compare::before {
 		content: "";
 		
-		position: absolute;
+		position: relative;
+		z-index: 2;
 		
-		right: 300px;
+		top: 6px;
+		
+		padding-right: 25px;
 		
 		width: 16px;
 		height: 16px;
@@ -421,9 +427,12 @@ body {
 	.footer__user-link--basket::before {
 		content: "";
 		
-		position: absolute;
+		position: relative;
+		z-index: 1;
 		
-		right: 170px;
+		top: 4px;
+		
+		padding-right: 25px;
 		
 		width: 16px;
 		height: 16px;
@@ -439,7 +448,7 @@ body {
     font-size: 15px;
     font-family: "OpenSans Light", sans-serif;
 	
-	margin-bottom: 46px;
+	margin-bottom: 73px;
 }
 
 .footer__menu {
@@ -448,7 +457,7 @@ body {
 	display: flex;
 	justify-content: center;
 	
-	margin-bottom: 80px;
+	margin-bottom: 73px;
 }
 
 .footer__menu-link {
@@ -460,7 +469,7 @@ body {
 	letter-spacing: 4px;
 	font-family: "Gilroy ExtraBold", sans-serif;
 	
-	margin-left: 30px;
+	margin-right: 39px;
 }
 
 .footer__phone {
@@ -471,7 +480,7 @@ body {
     font-size: 15px;
     font-family: "OpenSans Light", sans-serif;
 	
-	margin-bottom: 46px;
+	margin-bottom: 73px;
 }
 
 .footer__yellow-block {
