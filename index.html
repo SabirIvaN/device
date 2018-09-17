@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Девайс</title>
+		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
@@ -19,7 +20,7 @@
 					<div class="header__user-area-block">
 						<a href="#" class="header__user-area-link header__user-area-link--login">Войти</a>
 					</div>
-					<div class="header__block header__user-area-block">
+					<div class="header__user-area-block">
 						<a href="#" class="header__user-area-link header__user-area-link--compare">Сравнить</a>
 						<a href="#" class="header__user-area-link header__user-area-link--basket">Корзина</a>
 					</div>
@@ -46,9 +47,13 @@
 				</div>
 
 				<div class="header__block header__services">
-					<a href="#" class="header__service-link--delivery">Доставка</a>
-					<a href="#" class="header__service-link--garantee">Гарантия</a>
-					<a href="#" class="header__service-link--contacts">Контакты</a>
+					<div class="header__services-block">
+						<a href="#" class="header__service-link header__service-link--delivery">Доставка</a>
+						<a href="#" class="header__service-link header__service-link--garantee">Гарантия</a>
+					</div>
+					<div class="header__services-block">
+						<a href="#" class="header__service-link header__service-link--contacts">Контакты</a>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -144,54 +149,55 @@
 			</section>
 			
 			<!-- ссылки на разделы каталога -->
-			<section class="main-features">
-				<div class="main-features-items">
-					<a href="#" class="main-features-item">
-						<div class="main-features-item-background">
-							<img src="img/popular-1.svg" alt="Виртуальная реальность" width="160" height="160" class="main-features-item-image">
+			<section class="main__features">
+				<div class="main__features-items">
+					<a href="#" class="main__features-item">
+						<div class="main__features-item-background">
+							<img src="img/popular-1.svg" alt="Виртуальная реальность" width="160" height="160" class="main__features-item-image main__features-item-image--virtual">
 						</div>
-						<div class="main-features-item-overlay"></div>
-						<span class="main-features-item-value">Виртуальная реальность</span>
+						<div class="main__features-item-overlay"></div>
+						<span class="main__features-item-value">Виртуальная реальность</span>
 					</a>
-					<a href="#" class="main-features-item">
-						<div class="main-features-item-background">
-							<img src="img/popular-2.svg" alt="Моноподы для селфи" width="160" height="160" class="main-features-item-image">
+					<a href="#" class="main__features-item">
+						<div class="main__features-item-background">
+							<img src="img/popular-2.svg" alt="Моноподы для селфи" width="160" height="160" class="main__features-item-image main__features-item-image--selfie">
 						</div>
-						<div class="main-features-item-overlay"></div>
-						<span class="main-features-item-value">Моноподы для селфи</span>
+						<div class="main__features-item-overlay"></div>
+						<span class="main__features-item-value">Моноподы для селфи</span>
 					</a>
-					<a href="#" class="main-features-item">
-						<div class="main-features-item-background">
-							<img src="img/popular-3.svg" alt="Экшн-камеры" width="160" height="160" class="main-features-item-image">
+					<a href="#" class="main__features-item">
+						<div class="main__features-item-background">
+							<img src="img/popular-3.svg" alt="Экшн-камеры" width="160" height="160" class="main__features-item-image main__features-item-image--camera">
 						</div>
-						<div class="main-features-item-overlay"></div>
-						<span class="main-features-item-value">Экшн-камеры</span>
+						<div class="main__features-item-overlay"></div>
+						<span class="main__features-item-value">Экшн-камеры</span>
 					</a>
-					<a href="#" class="main-features-item">
-						<div class="main-features-item-background">
-							<img src="img/popular-4.svg" alt="Фитнес-браслеты" width="160" height="160" class="main-features-item-image">
+					<a href="#" class="main__features-item">
+						<div class="main__features-item-background">
+							<img src="img/popular-4.svg" alt="Фитнес-браслеты" width="160" height="160" class="main__features-item-image main__features-item-image--fitness">
 						</div>
-						<div class="main-features-item-overlay"></div>
-						<span class="main-features-item-value">Фитнес-браслеты</span>
+						<div class="main__features-item-overlay"></div>
+						<span class="main__features-item-value">Фитнес-браслеты</span>
 					</a>
-					<a href="#" class="main-features-item">
-						<div class="main-features-item-background">
-							<img src="img/popular-5.svg" alt="Умные часы" width="160" height="160" class="main-features-item-image">
+					<a href="#" class="main__features-item">
+						<div class="main__features-item-background">
+							<img src="img/popular-5.svg" alt="Умные часы" width="160" height="160" class="main__features-item-image main__features-item-image--clock">
 						</div>
-						<div class="main-features-item-overlay"></div>
-						<span class="main-features-item-value">Умные часы</span>
+						<div class="main__features-item-overlay"></div>
+						<span class="main__features-item-value">Умные часы</span>
 					</a>
-					<a href="#" class="main-features-item">
-						<div class="main-features-item-background">
-							<img src="img/popular-6.svg" alt="Квадракоптеры" width="160" height="160" class="main-features-item-image">
+					<a href="#" class="main__features-item">
+						<div class="main__features-item-background">
+							<img src="img/popular-6.svg" alt="Квадракоптеры" width="160" height="160" class="main__features-item-image main__features-item-image--quadrocopter">
 						</div>
-						<div class="main-features-item-overlay"></div>
-						<span class="main-features-item-value">Квадракоптеры</span>
+						<div class="main__features-item-overlay"></div>
+						<span class="main__features-item-value">Квадракоптеры</span>
 					</a>
 				</div>
 			</section>
 			
-			<section class="mainwe">
+			<!-- карусель рекламы -->
+			<section class="main-we">
 				<ul class="main-we-list">
 					<li class="main-we-item-list we-item-list-current">
 						<input type="radio" name="radioButton" id="main-we-list-first" class="main-we-item-list-radio" checked>
@@ -230,50 +236,50 @@
 				</div>
 			</section>
 			
-			<section class="main-supports">
-				<ul class="main-supports-list">
-					<li class="main-supports-list-item">
-						<img src="img/logo-1.png" alt="dji" class="main-supports-list-item-image">
-						<img src="img/logo-1.jpg copy.png" alt="dji" class="main-supports-list-item-image">
-					</li>
-					<li class="main-supports-list-item">
-						<img src="img/logo-3-1.png" alt="SP Gadjets" class="main-supports-list-item-image">
-						<img src="img/logo-3.jpg copy-1.png" alt="SP Gadjets" class="main-supports-list-item-image">
-					</li>
-					<li class="main-supports-list-item">
-						<img src="img/logo-3.png" alt="Go PRO" class="main-supports-list-item-image">
-						<img src="img/logo-3.jpg copy.png" alt="Go PRO" class="main-supports-list-item-image">
-					</li>
-					<li class="main-supports-list-item">
-						<img src="img/logo-4.png" alt="VIVE" class="main-supports-list-item-image">
-						<img src="img/logo-4.jpg copy.png" alt="VIVE" class="main-supports-list-item-image">
-					</li>
-				</ul>
+			<!-- ссылки на логотипы партнёров -->
+			<section class="main__supports">
+				<div class="main__supports-list">
+					<a href="#" class="main__supports-list-item">
+						<img src="img/logo-1.png" width="260" height="100" alt="dji" class="main__supports-list-item-image">
+					</a>
+					<a href="#" class="main__supports-list-item">
+						<img src="img/logo-3-1.png" width="260" height="100" alt="SP Gadjets" class="main__supports-list-item-image">
+					</a>
+					<a href="#" class="main__supports-list-item">
+						<img src="img/logo-3.png" width="260" height="100" alt="Go PRO" class="main__supports-list-item-image">
+					</a>
+					<a href="#" class="main__supports-list-item">
+						<img src="img/logo-4.png" width="260" height="100" alt="VIVE" class="main__supports-list-item-image">
+					</a>
+				</div>
 			</section>
 			
-			<section class="main-about-us-and-contacts-us">
-				<div class="main-about-us">
-					<h2 class="main-about-us-title">О нас</h2>
-					<p class="main-about-us-text">
+			<!-- блок с контактами и номером, адресом с картой -->
+			<section class="main__about-us-and-contacts-us">
+				<div class="main__about-us">
+					<div class="main__about-us-black-line"></div>
+					<h2 class="main__about-us-title">О нас</h2>
+					<p class="main__about-us-text">
 						Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
 					</p>
-					<p class="main-about-us-text">
+					<p class="main__about-us-text">
 						Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
 					</p>
-					<ul class="main-about-us-list">
-						<li class="main-about-us-list-item">Деловый Линии</li>
-						<li class="main-about-us-list-item">Авторейдеринг</li>
-						<li class="main-about-us-list-item">ЖелДор Экспедиция</li>
+					<ul class="main__about-us-list">
+						<li class="main__about-us-list-item">Деловый Линии</li>
+						<li class="main__about-us-list-item">Авторейдеринг</li>
+						<li class="main__about-us-list-item">ЖелДор Экспедиция</li>
 					</ul>
-					<a href="#" class="main-about-us-button page-button">Подробнее о нас</a>
+					<a href="#" class="main__about-us-button page-button">Подробнее о нас</a>
 				</div>
-				<div class="main-contacts-us">
-					<h2 class="main-contacts-us-title">Контакты</h2>
-					<p class="main-contacts-us-text">
+				<div class="main__contacts-us">
+					<div class="main__contacts-us-black-line"></div>
+					<h2 class="main__contacts-us-title">Контакты</h2>
+					<p class="main__contacts-us-text">
 						Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
 					</p>
-					<a class="main-contacts-us-map"><img src="img/map.png" alt="Карта" width="560" height="223" class="main-contacts-us-map-image"></a>
-					<a href="#" class="main-contacts-us-button page-button">Напишите нам</a>
+					<a class="main__contacts-us-map"><img src="img/map.png" alt="Карта" width="560" height="223" class="main__contacts-us-map-image"></a>
+					<a href="#" class="main__contacts-us-button page-button">Напишите нам</a>
 				</div>
 			</section>
 		</main>
@@ -295,12 +301,12 @@
 			<div class="footer__yellow-block"></div>
 			<div class="footer__social-network">
 				<div class="footer__social-network-list">
-					<a href="#" class="footer__social-network-list-item-link">Facebook</a>
-					<a href="#" class="footer__social-network-list-item-link">Instagram</a>
-					<a href="#" class="footer__social-network-list-item-link">Twitter</a>
+					<a href="#" class="footer__social-network-list-item-link footer__social-network-list-item-link--facebook">Facebook</a>
+					<a href="#" class="footer__social-network-list-item-link footer__social-network-list-item-link--instagramm">Instagram</a>
+					<a href="#" class="footer__social-network-list-item-link footer__social-network-list-item-link--twitter">Twitter</a>
 				</div>
 			</div>
-			<a href="#" class="footer__social-network-link-htmlacademy">HTML Academy</a>
+			<a href="#" class="footer__social-network-link--htmlacademy">HTML Academy</a>
 		</footer>
 	</body>
 </html>

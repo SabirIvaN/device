@@ -3,46 +3,56 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>HTML Academy: Девайс - каталог</title>
-		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header class="header">
-			<a href="index.html" class="header-logo">Device</a>
-			<div class="header-content">
-				<form action="#" method="POST" autocomplete="on" class="header-content-item header-content-form">
-					<input type="text" placeholder="Поиск по сайту" class="header-content-input">
-					<button class="header-content-button page-button">Найти</button>
+			<a href="index.html" class="header__logo">Device</a>
+			<div class="header__content">
+				<form action="#" method="POST" autocomplete="on" class="header__block header__form">
+					<input type="text" placeholder="Поиск по сайту" class="header__form-input">
+					<button type="submit" class="header__form-button page-button">Найти</button>
 				</form>
 
-				<div class="header-content-item header-content-area">
-					<a href="#" class="header-user-area-link">Иван Сабиров</a>
-					<a href="#" class="header-user-area-link">Выйти</a>
-					<a href="#" class="header-user-area-link">Сравнить</a>
-					<a href="#" class="header-user-area-link">Корзина</a>
+				<div class="header__block header__user-area">
+					
+					<div class="header__user-area-block">
+						<a href="#" class="header__user-area-link header__user-area-link--login">Иван Сабиров</a>
+						<a href="#" class="header__user-area-link header__user-area-link--exit">Выйти</a>
+					</div>
+					<div class="header__user-area-block">
+						<a href="#" class="header__user-area-link header__user-area-link--compare">Сравнить</a>
+						<a href="#" class="header__user-area-link header__user-area-link--basket">Корзина</a>
+					</div>
 				</div>
 				
-				<div class="header-content-item header-catalog-links">
-					<a href="catalog.html" class="header-catalog-main-link">Каталог товаров</a>
-					<div class="header-catalog-rows">
-						<div class="header-catalog-row">
-							<a href="#" class="header-catalog-link">Виртуальная реальность</a>
-							<a href="#" class="header-catalog-link">Моноподы для селфи</a>
-							<a href="#" class="header-catalog-link">Экшн-камеры</a>
-						</div>
-						<div class="header-catalog-row">
-							<a href="#" class="header-catalog-link">Фитнес-браслеты</a>
-							<a href="#" class="header-catalog-link">Умные часы</a>
-						</div>
-						<div class="header-catalog-row">
-							<a href="#" class="header-catalog-link">Квадракоптеры</a>
+				<div class="header__block header__catalog-links">
+					<a href="catalog.html" class="header__catalog-link">Каталог товаров</a>
+					<div class="header__catalog">
+						<div class="header__catalog-rows">
+							<div class="header__catalog-row">
+								<a href="#" class="header__catalog-row-link">Виртуальная реальность</a>
+								<a href="#" class="header__catalog-row-link">Моноподы для селфи</a>
+								<a href="#" class="header__catalog-row-link">Экшн-камеры</a>
+							</div>
+							<div class="header__catalog-row">
+								<a href="#" class="header__catalog-row-link">Фитнес-браслеты</a>
+								<a href="#" class="header__catalog-row-link">Умные часы</a>
+							</div>
+							<div class="header__catalog-row">
+								<a href="#" class="header__catalog-row-link">Квадракоптеры</a>
+							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="header-content-item header-services">
-					<a href="#" class="header-service">Доставка</a>
-					<a href="#" class="header-service">Гарантия</a>
-					<a href="#" class="header-service">Контакты</a>
+				<div class="header__block header__services">
+					<div class="header__services-block">
+						<a href="#" class="header__service-link header__service-link--delivery">Доставка</a>
+						<a href="#" class="header__service-link header__service-link--garantee">Гарантия</a>
+					</div>
+					<div class="header__services-block">
+						<a href="#" class="header__service-link header__service-link--contacts">Контакты</a>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -148,28 +158,29 @@
 		</main>
 		
 		<footer class="footer">
-			<a class="footer-logo">Device</a>
-			<div class="footer-user">
-				<a href="#" class="footer-user-link">Войти</a>
-				<a href="#" class="footer-user-link">Сравнить</a>
-				<a href="#" class="footer-user-link">Корзина</a>
+			<a href="#" class="footer__logo">Device</a>
+			<div class="footer__user">
+				<a href="#" class="footer__user-link footer__user-link--login">Иван Сабиров</a>
+				<a href="#" class="footer__user-link footer__user-link--exit">Выйти</a>
+				<a href="#" class="footer__user-link footer__user-link--compare">Сравнить</a>
+				<a href="#" class="footer__user-link footer__user-link--basket">Корзина</a>
 			</div>
-			<span class="footer-address">г. Москва, ул. Строителей, 15</span>
-			<div class="footer-menu">
-				<a href="#" class="footer-menu-link">Доставка</a>
-				<a href="#" class="footer-menu-link">Гарантия</a>
-				<a href="#" class="footer-menu-link">Контакты</a>
+			<span class="footer__address">г. Москва, ул. Строителей, 15</span>
+			<div class="footer__menu">
+				<a href="#" class="footer__menu-link">Доставка</a>
+				<a href="#" class="footer__menu-link">Гарантия</a>
+				<a href="#" class="footer__menu-link">Контакты</a>
 			</div>
-			<span class="footer-phone">Тел.: +7 (495) 495-95-95</span>
-			<div class="footer-yellow-block"></div>
-			<div class="footer-social-network">
-				<ul class="footer-social-network-list">
-					<a href="#" class="footer-social-network-list-item-link">Facebook</a>
-					<a href="#" class="footer-social-network-list-item-link">Instagramm</a>
-					<a href="#" class="footer-social-networklist-item-link">Twitter</a>
-				</ul>
-				<a href="#" class="footer-social-network-link-htmlacademy">HTMLAcademy</a>
+			<span class="footer__phone">Тел.: +7 (495) 495-95-95</span>
+			<div class="footer__yellow-block"></div>
+			<div class="footer__social-network">
+				<div class="footer__social-network-list">
+					<a href="#" class="footer__social-network-list-item-link">Facebook</a>
+					<a href="#" class="footer__social-network-list-item-link">Instagram</a>
+					<a href="#" class="footer__social-network-list-item-link">Twitter</a>
+				</div>
 			</div>
+			<a href="#" class="footer__social-network-link-htmlacademy">HTML Academy</a>
 		</footer>
 	</body>
 </html>
