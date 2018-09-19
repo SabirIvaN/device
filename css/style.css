@@ -187,6 +187,21 @@ header {
 
 /* main */
 
+	/* карусель товаров */
+
+	.main__carousel-product {
+		display: flex;
+	}
+
+	.main__carousel-about-product-description {
+		display: flex;
+	}
+
+	.main__carousel-about-product-description-text {
+		display: flex;
+		flex-direction: column;
+	}
+
 	/* ссылки на разделы каталога */
 
 	.main__features-items {
