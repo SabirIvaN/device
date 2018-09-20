@@ -42,6 +42,13 @@ body {
 	font-family: "OpenSans Light", "Arial", "Helvetica", sans-serif;
 }
 
+.page-button {
+	color: #000000;
+	font-size: 18px;
+	font-family: "Gilroy ExtraBold", "Arial", "Helvetica", sans-serif;
+	text-transform: uppercase;
+}
+
 /* header */
 
 header {
@@ -88,6 +95,11 @@ header {
 	line-height: 56px;
 }
 
+.header__form {
+	display: flex;
+	align-items: baseline;
+}
+
 .header__form-input {
 	width: 355px;
 	height: 47px;
@@ -99,12 +111,11 @@ header {
 }
 
 .header__form-button {
-	display: none;
-	
 	width: 85px;
 	height: 47px;
 	
 	color: #000000;
+	line-height: 30px;
 	
 	background: none;
 	border: 2px solid #000000;
@@ -138,10 +149,6 @@ header {
 	text-transform: uppercase;
 	letter-spacing: 4px;
 	line-height: 66px;
-}
-
-.header__catalog {
-	display: none;
 }
 
 .header__catalog-rows {
@@ -189,17 +196,61 @@ header {
 
 	/* карусель товаров */
 
+	.main__carousel {
+		margin-left: 140px;
+		margin-right: 140px;
+	}
+
 	.main__carousel-product {
 		display: flex;
+		
+		justify-content: space-around;
+	}
+
+	.main__carousel-first-product-image {
+		width: 384px;
+		height: 486px;
+	}
+
+	.main__carousel-second-product-image {
+		width: 345px;
+		height: 385px;
+	}
+
+	.main__carousel-third-product-image {
+		width: 526px;
+		height: 334px;
 	}
 
 	.main__carousel-about-product-description {
 		display: flex;
+		justify-content: space-between;
 	}
 
 	.main__carousel-about-product-description-text {
 		display: flex;
 		flex-direction: column;
+	}
+
+	.main__carousel-product {
+		display: none;
+	}
+
+	.main__carousel-radio:checked + .main__carousel-label + .main__carousel-product {
+		display: flex;
+	}
+
+	.main__carousel-about-product-title {
+		color: #000000;
+		font-size: 47px;
+		font-family: "Gilroy ExtraBold", "Arial", "Helvetica", sans-serif;
+		line-height: 56px;
+	}
+
+	.main__carousel-about-product-value {
+		color: #000000;
+		font-family: "Gilroy Light", "Arial", "Helvetica", sans-serif;
+		font-size: 47px; 
 	}
 
 	/* ссылки на разделы каталога */
@@ -274,6 +325,31 @@ header {
 		font-size: 18px;
 		font-family: "Gilroy ExtraBold", "Arial", "Helvetica", sans-serif;
 		line-height: 24px;
+	}
+
+	/* карусель рекламы */
+
+	.main__we {
+		display: flex;
+		flex-wrap: wrap;
+		
+		margin-left: 140px;
+		margin-right: 140px;
+	}
+
+	.main__we-item-list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.main__we-item-list-text {
+		width: 449px;
+	}
+
+	.main__we-item-list-title {
+		color: #000000;
+		font-size: 47px;
+		font-family: "Gilroy ExtraBold", "Arial", "Helvetica", sans-serif;
 	}
 
 	/* ссылки на логотипы партнёров */
