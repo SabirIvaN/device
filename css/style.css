@@ -47,6 +47,7 @@ body {
 	font-size: 18px;
 	font-family: "Gilroy ExtraBold", "Arial", "Helvetica", sans-serif;
 	text-transform: uppercase;
+	text-decoration: none;
 }
 
 /* header */
@@ -130,6 +131,14 @@ header {
 	line-height: 56px;
 }
 
+.header__user-area-block {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	
+	width: 50%;
+}
+
 .header__user-area a {
 	color: #000000;
 	font-size: 15px;
@@ -194,224 +203,371 @@ header {
 
 /* main */
 
-	/* карусель товаров */
+	/* главная страница */
 
-	.main__carousel {
-		margin-left: 140px;
-		margin-right: 140px;
-	}
+		/* карусель товаров */
 
-	.main__carousel-product {
-		display: flex;
-		
-		justify-content: space-around;
-	}
+		.main__carousel {
+			margin-left: 140px;
+			margin-right: 140px;
+		}
 
-	.main__carousel-first-product-image {
-		width: 384px;
-		height: 486px;
-	}
+		.main__carousel-product {
+			display: flex;
 
-	.main__carousel-second-product-image {
-		width: 345px;
-		height: 385px;
-	}
+			justify-content: space-around;
+		}
 
-	.main__carousel-third-product-image {
-		width: 526px;
-		height: 334px;
-	}
+		.main__carousel-first-product-image {
+			width: 384px;
+			height: 486px;
+		}
 
-	.main__carousel-about-product-description {
-		display: flex;
-		justify-content: space-between;
-	}
+		.main__carousel-second-product-image {
+			width: 345px;
+			height: 385px;
+		}
 
-	.main__carousel-about-product-description-text {
-		display: flex;
-		flex-direction: column;
-	}
+		.main__carousel-third-product-image {
+			width: 526px;
+			height: 334px;
+		}
 
-	.main__carousel-product {
-		display: none;
-	}
+		.main__carousel-about-product-description {
+			display: flex;
+			justify-content: space-between;
+		}
 
-	.main__carousel-radio:checked + .main__carousel-label + .main__carousel-product {
-		display: flex;
-	}
+		.main__carousel-about-product-description-text {
+			display: flex;
+			flex-direction: column;
+		}
 
-	.main__carousel-about-product-title {
-		color: #000000;
-		font-size: 47px;
-		font-family: "Gilroy ExtraBold", "Arial", "Helvetica", sans-serif;
-		line-height: 56px;
-	}
+		.main__carousel-product {
+			display: none;
+		}
 
-	.main__carousel-about-product-value {
-		color: #000000;
-		font-family: "Gilroy Light", "Arial", "Helvetica", sans-serif;
-		font-size: 47px; 
-	}
+		.main__carousel-radio:checked + .main__carousel-label + .main__carousel-product {
+			display: flex;
+		}
 
-	/* ссылки на разделы каталога */
+		.main__carousel-about-product-title {
+			color: #000000;
+			font-size: 47px;
+			font-family: "Gilroy ExtraBold", "Arial", "Helvetica", sans-serif;
+			line-height: 56px;
+		}
 
-	.main__features-items {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		
-		margin-top: 52px;
-		margin-left: 140px;
-		margin-right: 140px;
-	}
+		.main__carousel-about-product-value {
+			color: #000000;
+			font-family: "Gilroy Light", "Arial", "Helvetica", sans-serif;
+			font-size: 47px; 
+		}
 
-	.main__features-item {
-		text-decoration: none;
-	}
+		/* ссылки на разделы каталога */
 
-	.main__features-item-background {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		
-		width: 160px;
-		height: 160px;
-		
-		background-color: #f0c52e;
-	}
+		.main__features-items {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
 
-	.main__features-item-image--virtual {
-		width: 97px;
-		height: 55px;
-	}
+			margin-top: 52px;
+			margin-left: 140px;
+			margin-right: 140px;
+		}
 
-	.main__features-item-image--selfie {
-		width: 87px;
-		height: 117px;
-		
-		position: relative;
-		top: 21px;
-	}
+		.main__features-item {
+			text-decoration: none;
+		}
 
-	.main__features-item-image--camera {
-		width: 71px;
-		height: 87px;
-	}
+		.main__features-item-background {
+			display: flex;
+			justify-content: center;
+			align-items: center;
 
-	.main__features-item-image--fitness {
-		width: 107px;
-		height: 65px;
-	}
+			width: 160px;
+			height: 160px;
 
-	.main__features-item-image--clock {
-		width: 56px;
-		height: 98px;
-	}
+			background-color: #f0c52e;
+		}
 
-	.main__features-item-image--quadrocopter {
-		width: 132px;
-		height: 69px;
-	}
+		.main__features-item-image--virtual {
+			width: 97px;
+			height: 55px;
+		}
 
-	.main__features-item-value {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		
-		width: 160px;
-		height: 120px;
-		
-		color: #000000;
-		font-size: 18px;
-		font-family: "Gilroy ExtraBold", "Arial", "Helvetica", sans-serif;
-		line-height: 24px;
-	}
+		.main__features-item-image--selfie {
+			width: 87px;
+			height: 117px;
 
-	/* карусель рекламы */
+			position: relative;
+			top: 21px;
+		}
 
-	.main__we {
-		display: flex;
-		flex-wrap: wrap;
-		
-		margin-left: 140px;
-		margin-right: 140px;
-	}
+		.main__features-item-image--camera {
+			width: 71px;
+			height: 87px;
+		}
 
-	.main__we-item-list {
-		display: flex;
-		flex-direction: column;
-	}
+		.main__features-item-image--fitness {
+			width: 107px;
+			height: 65px;
+		}
 
-	.main__we-item-list-text {
-		width: 449px;
-	}
+		.main__features-item-image--clock {
+			width: 56px;
+			height: 98px;
+		}
 
-	.main__we-item-list-title {
-		color: #000000;
-		font-size: 47px;
-		font-family: "Gilroy ExtraBold", "Arial", "Helvetica", sans-serif;
-	}
+		.main__features-item-image--quadrocopter {
+			width: 132px;
+			height: 69px;
+		}
 
-	/* ссылки на логотипы партнёров */
+		.main__features-item-value {
+			display: flex;
+			justify-content: center;
+			align-items: center;
 
-	.main__supports-list {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		
-		margin-top: 94px;
-		margin-right: 140px;
-		margin-bottom: 94px;
-		margin-left: 140px;
-		
-		list-style: none;
-	}
+			width: 160px;
+			height: 120px;
 
-	/* блок с контактами и номером, адресом с картой */
+			color: #000000;
+			font-size: 18px;
+			font-family: "Gilroy ExtraBold", "Arial", "Helvetica", sans-serif;
+			line-height: 24px;
+		}
 
-	.main__about-us-and-contacts-us {
-		display: flex;
-		flex-wrap: wrap;
-		
-		margin-left: 140px;
-		margin-right: 140px;
-	}
+		/* карусель рекламы */
 
-	.main__about-us {
-		width: 50%;
-	}
+		.main__we {
+			display: flex;
+			flex-wrap: wrap;
 
-	.main__about-us-black-line {
-		width: 80px;
-		height: 8px;
-		background-color: #000000;
-	}
+			margin-left: 140px;
+			margin-right: 140px;
+		}
 
-	.main__about-us-text {
-		width: 460px;
-	}
+		.main__we-item-list {
+			display: flex;
+			flex-direction: column;
+		}
 
-	.main__contacts-us {
-		width: 50%;
-	}
+		.main__we-item-list-text {
+			width: 449px;
+		}
 
-	.main__contacts-us-black-line {
-		width: 80px;
-		height: 8px;
-		background-color: #000000;
-	}
+		.main__we-item-list-title {
+			color: #000000;
+			font-size: 47px;
+			font-family: "Gilroy ExtraBold", "Arial", "Helvetica", sans-serif;
+		}
 
-	.main__about-us-title, .main__contacts-us-title {
-		font-size: 47px;
-		font-family: "Gilroy ExtraBold", "Arial", "Helvetica", sans-serif;
-	}
+		/* ссылки на логотипы партнёров */
 
-	.main__about-us-button, .main__contacts-us-button {
-		color: #000000;
-		font-size: 24px;
-		font-family: "Gilroy ExtraBold", "Arial", "Helvetica", sans-serif;
-		text-decoration: none;
-	}
+		.main__supports-list {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+
+			margin-top: 94px;
+			margin-right: 140px;
+			margin-bottom: 94px;
+			margin-left: 140px;
+
+			list-style: none;
+		}
+
+		/* блок с контактами и номером, адресом с картой */
+
+		.main__about-us-and-contacts-us {
+			display: flex;
+			flex-wrap: wrap;
+
+			margin-left: 140px;
+			margin-right: 140px;
+		}
+
+		.main__about-us {
+			width: 50%;
+		}
+
+		.main__about-us-black-line {
+			width: 80px;
+			height: 8px;
+			background-color: #000000;
+		}
+
+		.main__about-us-text {
+			width: 460px;
+		}
+
+		.main__contacts-us {
+			width: 50%;
+		}
+
+		.main__contacts-us-black-line {
+			width: 80px;
+			height: 8px;
+			background-color: #000000;
+		}
+
+		.main__about-us-title, .main__contacts-us-title {
+			font-size: 47px;
+			font-family: "Gilroy ExtraBold", "Arial", "Helvetica", sans-serif;
+		}
+
+		.main__about-us-button, .main__contacts-us-button {
+			color: #000000;
+			font-size: 24px;
+			font-family: "Gilroy ExtraBold", "Arial", "Helvetica", sans-serif;
+			text-decoration: none;
+		}
+
+	/* страница каталога */
+
+		/* путь к каталогу */
+
+		.main {
+			margin-left: 140px;
+			margin-right: 140px;
+		}
+
+		.main__header-title {
+			color: #000000;
+			font-size: 47px;
+			font-family: "Gilroy ExtraBold", "Arial", "Helvetica", sans-serif;
+		}
+
+		.main__header-breadcrumbs {
+			display: flex;
+			list-style: none;
+			padding: 0;
+		}
+
+		.main__header-breadcrums-link {
+			margin-right: 20px;
+			
+			color: #000000;
+			text-decoration: none;
+		}
+
+		/* фильтры и сортировки */
+
+		.main__wrapper-content {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+		}
+
+		.main__wrapper-content-filter {
+			width: 268px;
+		}
+
+		.main__wrapper-content-sorting {
+			display: flex;
+			
+			width: 855px;
+		}
+
+		.main__wrapper-content-sorting-list {
+			display: flex;
+			
+			list-style: none;
+		}
+
+		.main__wrapper-content-sorting-list-item {
+			margin-right: 20px;
+		}
+
+		.main__wrapper-content-filter-title, .main__wrapper-content-sorting-title {
+			color: #000000;
+			font-size: 16px;
+			font-family: "Gilroy ExtraBold", "Arial", "Helvetica", sans-serif;
+			text-transform: uppercase;
+		}
+
+		/* фильтр и каталог товаров */
+
+		.main__catalog-product {
+			display: flex;
+		}
+
+		.main__catalog-product-filters {
+			display: flex;
+			flex-direction: column;
+			
+			width: 268px;
+		}
+
+		.main__catalog-product-filter-color {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.main__catalog-product-filter-color-checkbox {
+			display: none;
+		}
+
+		.main__catalog-filter-bluetooth {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.main__catalog-filter-bluetooth-radio {
+			display: none;
+		}
+
+		.main__products-catalog {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.main__products-catalog-items {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			
+			width: 855px;
+		}
+
+		.main__products-catalog-item {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.main__product-catalog-item-description {
+			display: flex;
+			flex-direction: row;
+		}
+
+		.main__product-catalog-item-description-name {
+			width: 260px;
+			
+			color: #000000;
+			font-size: 18px;
+			font-family: "Gilroy ExtraBold", "Arial", "Helvetica", sans-serif;
+		}
+
+		.main__products-catalog-paginator {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.main__products-catalog-paginator-list {
+			display: flex;
+			
+			list-style: none;
+		}
+
+		.main__products-catalog-paginator a {
+			color: #000000;
+			font-size: 16px;
+			font-family: "Gilroy ExtraBold", "Arial", "Helvetica", sans-serif;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
 
 /* footer */
 
