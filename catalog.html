@@ -133,11 +133,11 @@
 					<!-- перечень товаров -->
 					<section class="main__products-catalog">
 						<div class="main__products-catalog-items">
-							<!--	<div class="main__products-modal-buttons">
+							<a class="main__products-catalog-item">
+								<!--	<div class="main__products-modal-buttons">
 										<input type="submit" class="button" class="main__products-catalog-button page-button" value="В корзину">
 										<a href="#" class="main__products-catalog-link page-link">Добавить к сравнению</a>
-									</div> -->
-							<a class="main__products-catalog-item">
+								</div> -->
 								<img src="img/item-1.jpg" alt="Любительская селфи-палка" class="main__product-catalog-item-image" width="360" height="382">
 								<div class="main__product-catalog-item-description">
 									<span class="main__product-catalog-item-description-name">Любительская селфи-палка</span>
@@ -145,6 +145,10 @@
 								</div>
 							</a>
 							<a class="main__products-catalog-item">
+								<!--	<div class="main__products-modal-buttons">
+										<input type="submit" class="button" class="main__products-catalog-button page-button" value="В корзину">
+										<a href="#" class="main__products-catalog-link page-link">Добавить к сравнению</a>
+								</div> -->
 								<img src="img/item-2.jpg" alt="Профессиональная селфи-палка" class="main__product-catalog-item-image" width="360" height="382">
 								<div class="main__product-catalog-item-description">
 									<span class="main__product-catalog-item-description-name">Профессиональная селфи-палка</span>
@@ -152,6 +156,10 @@
 								</div>
 							</a>
 							<a class="main__products-catalog-item">
+								<!--	<div class="main__products-modal-buttons">
+										<input type="submit" class="button" class="main__products-catalog-button page-button" value="В корзину">
+										<a href="#" class="main__products-catalog-link page-link">Добавить к сравнению</a>
+								</div> -->
 								<img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" class="main__product-catalog-item-image" width="360" height="382">
 								<div class="main__product-catalog-item-description">
 									<span class="main__product-catalog-item-description-name">Непотопляемая селфи-палка</span>
@@ -159,6 +167,10 @@
 								</div>
 							</a>
 							<a class="main__products-catalog-item">
+								<!--	<div class="main__products-modal-buttons">
+										<input type="submit" class="button" class="main__products-catalog-button page-button" value="В корзину">
+										<a href="#" class="main__products-catalog-link page-link">Добавить к сравнению</a>
+								</div> -->
 								<!-- <img src="#" alt="Новинка" class="main__product-catalog-item-new" width="60" height="60"> -->
 								<img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" class="main__product-catalog-item-image" width="360" height="382">
 								<div class="main__product-catalog-item-description">
@@ -183,12 +195,18 @@
 		</main>
 		
 		<footer class="footer">
-			<a href="#" class="footer__logo">Device</a>
+			<div class="footer__logo">
+				<a href="#" class="footer__logo-link">Device</a>
+			</div>
 			<div class="footer__user">
-				<a href="#" class="footer__user-link footer__user-link--login">Иван Сабиров</a>
-				<a href="#" class="footer__user-link footer__user-link--exit">Выйти</a>
-				<a href="#" class="footer__user-link footer__user-link--compare">Сравнить</a>
-				<a href="#" class="footer__user-link footer__user-link--basket">Корзина</a>
+				<div class="footer__user-block">
+					<a href="#" class="footer__user-link footer__user-link--login">Иван Сабиров</a>
+					<a href="#" class="footer__user-link footer__user-link--exit">Выйти</a>
+				</div>
+				<div class="footer__user-block">
+					<a href="#" class="footer__user-link footer__user-link--compare">Сравнить</a>
+					<a href="#" class="footer__user-link footer__user-link--basket">Корзина</a>
+				</div>
 			</div>
 			<span class="footer__address">г. Москва, ул. Строителей, 15</span>
 			<div class="footer__menu">

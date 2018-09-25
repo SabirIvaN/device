@@ -107,15 +107,15 @@
 					<img src="img/slider-2.png" alt="Фото товара" width="440" height="576" class="main__carousel-second-product-image main-carousel-product-image">
 					
 					<div class="main-carousel-second-product-about-product"> 
-						<h2 class="main-carousel-second-product-about-product-title main__carousel-about-product-title">Худеем правильно!</h2>
-						<p class="main-carousel-second-product-about-product-text about-product-text">
+						<h2 class="main__carousel-second-product-about-product-title main__carousel-about-product-title">Худеем правильно!</h2>
+						<p class="main__carousel-second-product-about-product-text about-product-text">
 							Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
 						</p>
-						<a class="main-carousel-second-product-about-product-button page-button">Подробнее</a>
-						<div class="main-carousel-second-product-about-product-description main__carousel-about-product-description">
+						<a class="main__carousel-second-product-about-product-button page-button">Подробнее</a>
+						<div class="main__carousel-second-product-about-product-description main__carousel-about-product-description">
 							<p class="main__carousel-about-product-description-text">
-								<span class="main-carousel-second-product-about-product-value main-carousel-about-product-value">48 часов</span>
-								<span class="main-carousel-first-product-about-product-type main-carousel-about-product-type">Без подзарядки</span>
+								<span class="main__carousel-second-product-about-product-value main__carousel-about-product-value">48 часов</span>
+								<span class="main__carousel-first-product-about-product-type main__carousel-about-product-type">Без подзарядки</span>
 							</p>
 						</div>
 					</div>
@@ -130,20 +130,20 @@
 					
 					<img src="img/slider-3.png" alt="Фото товара" width="440" height="576" class="main__carousel-third-product-image main-carouselproduct-image">
 					
-					<div class="main-carousel-third-product-about-product"> 
-						<h2 class="main-carousel-third-product-about-product-title main__carousel-about-product-title">Порхает как бабочка, жалит как пчела!</h2>
-						<p class="main-carousel-first-product-about-product-text about-product-text">
+					<div class="main__carousel-third-product-about-product"> 
+						<h2 class="main__carousel-third-product-about-product-title main__carousel-about-product-title">Порхает как бабочка, жалит как пчела!</h2>
+						<p class="main__carousel-first-product-about-product-text about-product-text">
 							Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
 						</p>
-						<a class="main-carousel-third-product-about-product-button page-button">Подробнее</a>
-						<div class="main-carousel-third-product-about-product-description main__carousel-about-product-description">
+						<a class="main__carousel-third-product-about-product-button page-button">Подробнее</a>
+						<div class="main__carousel-third-product-about-product-description main__carousel-about-product-description">
 							<p class="main__carousel-about-product-description-text">
-								<span class="main-carousel-third-product-about-product-value main-carousel-about-product-value">800 м</span>
-								<span class="main-carousel-first-product-about-product-type main-carousel-about-product-type">Дальность полета</span>
+								<span class="main__carousel-third-product-about-product-value main__carousel-about-product-value">800 м</span>
+								<span class="main__carousel-first-product-about-product-type main__carousel-about-product-type">Дальность полета</span>
 							</p>
 							<p class="main__carousel-about-product-description-text">
-								<span class="main-carousel-third-product-about-product-value main-carousel-about-product-value">50 м</span>
-								<span class="main-carousel-first-product-about-product-type main-carousel-about-product-type">Радиус поражения</span>
+								<span class="main__carousel-third-product-about-product-value main__carousel-about-product-value">50 м</span>
+								<span class="main__carousel-first-product-about-product-type main__carousel-about-product-type">Радиус поражения</span>
 							</p>
 						</div>
 					</div>
@@ -225,7 +225,6 @@
 						<p class="main__we-item-list-first-text main__we-item-list-text">
 							Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
 						</p>
-						<img src="img/delivery.svg" alt="Доставка" width="260" height="225">
 					</div>
 					
 					<div class="main__we-item-list-second main__we-item-list">
@@ -234,7 +233,6 @@
 							Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
 							Товар, не дом, конечно же.
 						</p>
-						<img src="img/warranty.svg" alt="Гарантия" width="260" height="225">
 					</div>
 					
 					<div class="main__we-item-list-third main__we-item-list">
@@ -242,7 +240,6 @@
 						<p class="main__we-item-list-third-text main__we-item-list-text">
 							Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
 						</p>
-						<img src="img/credit.svg" alt="Кредит" width="260" height="225">
 					</div>
 					
 				</div>
@@ -298,11 +295,17 @@
 		</main>
 
 		<footer class="footer">
-			<a href="#" class="footer__logo">Device</a>
+			<div class="footer__logo">
+				<a href="#" class="footer__logo-link">Device</a>
+			</div>
 			<div class="footer__user">
-				<a href="#" class="footer__user-link footer__user-link--login">Войти</a>
-				<a href="#" class="footer__user-link footer__user-link--compare">Сравнить</a>
-				<a href="#" class="footer__user-link footer__user-link--basket">Корзина</a>
+				<div class="footer__user-block">
+					<a href="#" class="footer__user-link footer__user-link--login">Войти</a>
+				</div>
+				<div class="footer__user-block">
+					<a href="#" class="footer__user-link footer__user-link--compare">Сравнить</a>
+					<a href="#" class="footer__user-link footer__user-link--basket">Корзина</a>
+				</div>
 			</div>
 			<span class="footer__address">г. Москва, ул. Строителей, 15</span>
 			<div class="footer__menu">
