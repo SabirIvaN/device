@@ -327,6 +327,14 @@ header {
 	line-height: 24px;
 }
 
+.header__catalog {
+	display: none;
+}
+
+.header__catalog-link:hover .header__catalog {
+	display: block;
+}
+
 .header__catalog-link::after {
 	content: "";
 	
