@@ -91,8 +91,8 @@
 					</div>
 					
 					<div class="main__wrapper-arrows">
-						<span class="main__wrapper-arrows-tr"></span>
-						<span class="main__wrapper-arrows-tr"></span>
+						<a href="#" class="main__wrapper-arrows-tr"></a>
+						<a href="#" class="main__wrapper-arrows-tr"></a>
 					</div>
 					
 				</div>
@@ -102,6 +102,23 @@
 			<div class="main__catalog">
 				<div class="main__catalog-product">
 					<aside class="main__catalog-product-filters">
+						
+						<div class="main__catalog-product-filter-cost">
+							<h3 class="main__catalog-product-filter-cost-title">Цена</h3>
+							
+							<div class="main__catalog-filter-cost-buttons">
+								
+								<button class="main__catalog-filter-cost-button">
+									<span class="main__catalog-filter-cost-begin">От 0</span>
+								</button>
+								
+								<button class="main__catalog-filter-cost-button">
+									<span class="main__catalog-filter-cost-end">До 5000</span>
+								</button>
+								
+							</div>
+						</div>
+						
 						<div class="main__catalog-product-filter-color">
 							<h3 class="main__catalog-product-filter-color-title">Цвет</h3>
 
@@ -122,8 +139,8 @@
 						</div>
 						<div class="main__catalog-filter-bluetooth">
 							<h3 class="main__catalog-filter-bluetooth-title">Blutooth</h3>
-							<input type="radio" name="blutooth-radio" id="yes" class="main__catalog-filter-bluetooth-radio">
-							<label for="yes" class="main__catalog-filter-bluetooth-label">Да</label>
+							<input type="radio" name="blutooth-radio" id="yes" class="main__catalog-filter-bluetooth-radio" checked>
+							<label for="yes" class="main__catalog-filter-bluetooth-label">Есть</label>
 							<input type="radio" name="blutooth-radio" id="no" class="main__catalog-filter-bluetooth-radio">
 							<label for="no" class="main__catalog-filter-bluetooth-label">Нет</label>
 						</div>
@@ -132,52 +149,86 @@
 
 					<!-- перечень товаров -->
 					<section class="main__products-catalog">
+						
 						<div class="main__products-catalog-items">
-							<a class="main__products-catalog-item">
-								<!--	<div class="main__products-modal-buttons">
-										<input type="submit" class="button" class="main__products-catalog-button page-button" value="В корзину">
+							
+							<div class="main__products-catalog-item">
+								
+								<div class="main__products-catalog-item-active">
+									
+									<div class="main__products-modal-buttons">
+										<a class="main__products-catalog-button page-button">В корзину</a>
 										<a href="#" class="main__products-catalog-link page-link">Добавить к сравнению</a>
-								</div> -->
-								<img src="img/item-1.jpg" alt="Любительская селфи-палка" class="main__product-catalog-item-image" width="360" height="382">
+									</div>
+
+									<img src="img/item-1.jpg" alt="Любительская селфи-палка" class="main__product-catalog-item-image" width="360" height="382">
+								</div>
+								
 								<div class="main__product-catalog-item-description">
 									<span class="main__product-catalog-item-description-name">Любительская селфи-палка</span>
 									<span class="main__product-catalog-item-description-cost">500 руб.</span>
 								</div>
-							</a>
-							<a class="main__products-catalog-item">
-								<!--	<div class="main__products-modal-buttons">
-										<input type="submit" class="button" class="main__products-catalog-button page-button" value="В корзину">
+								
+							</div>
+							
+							<div class="main__products-catalog-item">
+								
+								<div class="main__products-catalog-item-active">
+									
+									<div class="main__products-modal-buttons">
+										<a class="main__products-catalog-button page-button">В корзину</a>
 										<a href="#" class="main__products-catalog-link page-link">Добавить к сравнению</a>
-								</div> -->
-								<img src="img/item-2.jpg" alt="Профессиональная селфи-палка" class="main__product-catalog-item-image" width="360" height="382">
+									</div>
+									
+									<img src="img/item-2.jpg" alt="Профессиональная селфи-палка" class="main__product-catalog-item-image" width="360" height="382">
+								</div>
+								
 								<div class="main__product-catalog-item-description">
 									<span class="main__product-catalog-item-description-name">Профессиональная селфи-палка</span>
 									<span class="main__product-catalog-item-description-cost">1500 руб.</span>
 								</div>
-							</a>
-							<a class="main__products-catalog-item">
-								<!--	<div class="main__products-modal-buttons">
-										<input type="submit" class="button" class="main__products-catalog-button page-button" value="В корзину">
+							</div>
+							
+							<div class="main__products-catalog-item">
+								
+								<div class="main__products-catalog-item-active">
+									
+									<div class="main__products-modal-buttons">
+										<a class="main__products-catalog-button page-button">В корзину</a>
 										<a href="#" class="main__products-catalog-link page-link">Добавить к сравнению</a>
-								</div> -->
-								<img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" class="main__product-catalog-item-image" width="360" height="382">
+									</div>
+									
+									<img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" class="main__product-catalog-item-image" width="360" height="382">
+								</div>
+								
 								<div class="main__product-catalog-item-description">
 									<span class="main__product-catalog-item-description-name">Непотопляемая селфи-палка</span>
 									<span class="main__product-catalog-item-description-cost">2500 руб.</span>
 								</div>
-							</a>
-							<a class="main__products-catalog-item">
-								<!--	<div class="main__products-modal-buttons">
-										<input type="submit" class="button" class="main__products-catalog-button page-button" value="В корзину">
+								
+							</div>
+							
+							<div class="main__products-catalog-item">
+								
+								<div class="main__products-catalog-item-active">
+									
+									<div class="main__products-modal-buttons">
+										<a class="main__products-catalog-button page-button">В корзину</a>
 										<a href="#" class="main__products-catalog-link page-link">Добавить к сравнению</a>
-								</div> -->
-								<!-- <img src="#" alt="Новинка" class="main__product-catalog-item-new" width="60" height="60"> -->
-								<img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" class="main__product-catalog-item-image" width="360" height="382">
+									</div>
+									
+									<div class="main__products-catalog-item-new">New</div>
+									
+									<img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" class="main__product-catalog-item-image" width="360" height="382">
+									
+								</div>
+								
 								<div class="main__product-catalog-item-description">
 									<span class="main__product-catalog-item-description-name">Селфи-палка «Следуй за мной»</span>
 									<span class="main__product-catalog-item-description-cost">9400 руб.</span>
 								</div>
-							</a>
+								
+							</div>
 						</div>
 						<div class="main__products-catalog-paginator">
 							<a href="#" class="main__products-catalog-paginator-back">Назад</a>

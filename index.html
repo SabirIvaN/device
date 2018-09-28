@@ -66,17 +66,17 @@
 			<!-- карусель товаров -->
 			<section class="main__carousel">
 				
-				<input type="radio" name="radioButton-product" id="main-carousel-radio-first-product" class="main__carousel-radio-first-product main__carousel-radio" checked>
+				<input type="radio" name="radioButton-product" id="main__carousel-radio-first-product" class="main__carousel-radio-first-product main__carousel-radio" checked>
 				<label for="main__carousel-radio-first-product" class="main__carousel-label"></label>
 				
 				<div class="main__carousel-product main__carousel-first-product">
 					
 					<img src="img/slider-1.png" alt="Фото товара" width="384" height="486" class="main__carousel-first-product-image main__carousel-product-image">
 					
-					<div class="main__carousel-first-product-about-product main-carousel-about-product"> 
+					<div class="main__carousel-first-product-about-product main__carousel-about-product"> 
 						<h2 class="main__carousel-first-product-about-product-title main__carousel-about-product-title">Делай селфи, <br> как Бен Стиллер!</h2>
-						<p class="main__carousel-first-product-about-product-text about-product-text">
-							Самая длинная палка для селфи доступна в нашем магазине. <br>
+						<p class="main__carousel-first-product-about-product-text main__carousel-about-product-text">
+							Самая длинная палка для селфи доступна в нашем магазине.
 							Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
 						</p>
 						<a class="main__carousel-first-product-about-product-button page-button">Подробнее</a>
@@ -108,7 +108,7 @@
 					
 					<div class="main-carousel-second-product-about-product"> 
 						<h2 class="main__carousel-second-product-about-product-title main__carousel-about-product-title">Худеем правильно!</h2>
-						<p class="main__carousel-second-product-about-product-text about-product-text">
+						<p class="main__carousel-second-product-about-product-text main__carousel-about-product-text">
 							Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
 						</p>
 						<a class="main__carousel-second-product-about-product-button page-button">Подробнее</a>
@@ -132,7 +132,7 @@
 					
 					<div class="main__carousel-third-product-about-product"> 
 						<h2 class="main__carousel-third-product-about-product-title main__carousel-about-product-title">Порхает как бабочка, жалит как пчела!</h2>
-						<p class="main__carousel-first-product-about-product-text about-product-text">
+						<p class="main__carousel-first-product-about-product-text main__carousel-about-product-text">
 							Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
 						</p>
 						<a class="main__carousel-third-product-about-product-button page-button">Подробнее</a>
@@ -202,23 +202,11 @@
 			
 			<!-- карусель рекламы -->
 			<section class="main__we">
-				
-				<div class="main-we-list">
-					<div class="main-we-item-list we-item-list-current">
-						<input type="radio" name="radioButton" id="main-we-list-first" class="main-we-item-list-radio" checked>
-						<label for="main-we-list-first" class="page-button">Доставка</label>
-					</div>
-					<div class="main-we-item-list">
-						<input type="radio" name="radioButton" id="main-we-list-second">
-						<label for="main-we-list-second" class="page-button">Гарантия</label>
-					</div>
-					<div class="main-we-item-list">
-						<input type="radio" name="radioButton" id="main-we-list-third">
-						<label for="main-we-list-third" class="page-button">Кредит</label>
-					</div>
-				</div>
-				
+								
 				<div class="main__we-items">
+					
+					<input type="radio" name="radioButton" id="main__we-list-first" class="main__we-item-list-radio" checked>
+					<label for="main__we-list-first" class="main__we-item-list-button page-button">Доставка</label>
 					
 					<div class="main__we-item-list-first main__we-item-list">
 						<h2 class="main__we-item-list-first-title main__we-item-list-title">Доставка</h2>
@@ -227,6 +215,9 @@
 						</p>
 					</div>
 					
+					<input type="radio" name="radioButton" id="main__we-list-second" class="main__we-item-list-radio">
+					<label for="main__we-list-second" class="main__we-item-list-button page-button">Гарантия</label>
+					
 					<div class="main__we-item-list-second main__we-item-list">
 						<h2 class="main__we-item-list-second-title main__we-item-list-title">Гарантия</h2>
 						<p class="main__we-item-list-second-text main__we-item-list-text">
@@ -234,6 +225,9 @@
 							Товар, не дом, конечно же.
 						</p>
 					</div>
+					
+					<input type="radio" name="radioButton" id="main__we-list-third" class="main__we-item-list-radio">
+					<label for="main__we-list-third" class="main__we-item-list-button page-button">Кредит</label>
 					
 					<div class="main__we-item-list-third main__we-item-list">
 						<h2 class="main__we-item-list-third-title main__we-item-list-title">Контакты</h2>
@@ -250,16 +244,16 @@
 			<section class="main__supports">
 				<div class="main__supports-list">
 					<a href="#" class="main__supports-list-item">
-						<img src="img/logo-1.png" width="260" height="100" alt="dji" class="main__supports-list-item-image">
+						<img src="img/logo-1.jpg copy.png" width="260" height="100" alt="dji" class="main__supports-list-item-image">
 					</a>
 					<a href="#" class="main__supports-list-item">
-						<img src="img/logo-3-1.png" width="260" height="100" alt="SP Gadjets" class="main__supports-list-item-image">
+						<img src="img/logo-3.jpg copy-1.png" width="260" height="100" alt="SP Gadjets" class="main__supports-list-item-image">
 					</a>
 					<a href="#" class="main__supports-list-item">
-						<img src="img/logo-3.png" width="260" height="100" alt="Go PRO" class="main__supports-list-item-image">
+						<img src="img/logo-3.jpg copy.png" width="260" height="100" alt="Go PRO" class="main__supports-list-item-image">
 					</a>
 					<a href="#" class="main__supports-list-item">
-						<img src="img/logo-4.png" width="260" height="100" alt="VIVE" class="main__supports-list-item-image">
+						<img src="img/logo-4.jpg copy.png" width="260" height="100" alt="VIVE" class="main__supports-list-item-image">
 					</a>
 				</div>
 			</section>
