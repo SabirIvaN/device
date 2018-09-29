@@ -119,10 +119,12 @@ body {
 /* header */
 
 header {
+	width: 1160px;
+	
 	padding-top: 34px;
+	padding-bottom: 34px;
+	margin: 0 auto;
 	margin-top: 41px;
-	margin-right: 140px;
-	margin-left: 140px;
 	
 	background-color: #f7e296;
 }
@@ -466,10 +468,10 @@ header {
 		/* карусель товаров */
 
 		.main__carousel {
+			width: 1160px;
 			height: 544px;
 			
-			margin-left: 140px;
-			margin-right: 140px;
+			margin: 0 auto;
 			
 			position: relative;
 			
@@ -576,9 +578,8 @@ header {
 			justify-content: space-between;
 			flex-wrap: wrap;
 
-			margin-top: 52px;
-			margin-left: 140px;
-			margin-right: 140px;
+			width: 1160px;
+			margin: 0 auto;
 		}
 
 		.main__features-item {
@@ -659,9 +660,10 @@ header {
 			
 			position: relative;
 			
+			width: 1160px;
+			
+			margin: 0 auto;
 			padding-left: 280px;
-			margin-left: 140px;
-			margin-right: 140px;
 		}
 
 		.main__we-item-list {
@@ -711,10 +713,9 @@ header {
 			justify-content: space-between;
 			flex-wrap: wrap;
 
-			margin-top: 94px;
-			margin-right: 140px;
-			margin-bottom: 94px;
-			margin-left: 140px;
+			width: 1160px;
+			
+			margin: 0 auto;
 
 			list-style: none;
 		}
@@ -754,8 +755,9 @@ header {
 			display: flex;
 			flex-wrap: wrap;
 
-			margin-left: 140px;
-			margin-right: 140px;
+			width: 1160px;
+			
+			margin: 0 auto;
 		}
 
 		.main__about-us {
@@ -792,8 +794,10 @@ header {
 		/* путь к каталогу */
 
 		.main__header {
-			margin-left: 200px;
-			margin-right: 140px;
+			width: 1160px;
+			
+			margin: 0 auto;
+			padding-left: 60px;
 		}
 
 		.main__header-title {
@@ -822,8 +826,10 @@ header {
 			flex-wrap: wrap;
 			justify-content: flex-start;
 			
-			margin-left: 200px;
-			margin-right: 140px;
+			width: 1160px;
+			
+			margin: 0 auto;
+			padding-left: 60px;
 		}
 
 		.main__wrapper-content-filter {
@@ -906,8 +912,10 @@ header {
 		.main__catalog-product {
 			display: flex;
 			
-			margin-left: 200px;
-			margin-right: 140px;
+			width: 1160px;
+			
+			margin: 0 auto;
+			padding-left: 60px;
 		}
 
 		.main__catalog-product-filters {
@@ -1195,16 +1203,19 @@ header {
 /* footer */
 
 .footer {
+	background-color: #464646;
+}
+
+.footer__wrapper {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	
-    padding-top: 67px;
-	padding-left: 140px;
-	padding-right: 140px;
-    padding-bottom: 79px;
+	width: 1160px;
 	
-    background-color: #464646;
+    padding-top: 67px;
+	margin: 0 auto;
+    padding-bottom: 79px;
 }
 
 .footer__logo {
