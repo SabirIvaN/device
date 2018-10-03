@@ -111,7 +111,7 @@
 					<div class="main-carousel-second-product-about-product main__carousel-about-product"> 
 						<h2 class="main__carousel-second-product-about-product-title main__carousel-about-product-title">Худеем <br> правильно!</h2>
 						<p class="main__carousel-second-product-about-product-text main__carousel-about-product-text">
-							Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+							Мотивирующие фитнес-браслеты помогут найти в себе силы <br> не пропускать занятия и соблюдать диету.
 						</p>
 						<a href="#" class="main__carousel-product-button page-button">Подробнее</a>
 						<div class="main__carousel-second-product-about-product-description main__carousel-about-product-description">
@@ -136,17 +136,17 @@
 					<div class="main__carousel-third-product-about-product main__carousel-about-product"> 
 						<h2 class="main__carousel-third-product-about-product-title main__carousel-about-product-title">Порхает как бабочка,<br> жалит как пчела!</h2>
 						<p class="main__carousel-first-product-about-product-text main__carousel-about-product-text">
-							Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+							Этот обычный, на первый взгляд, квадрокоптер оснащен <br> мощным лазером, замаскированным под стандартную камеру.
 						</p>
 						<a href="#" class="main__carousel-product-button page-button">Подробнее</a>
 						<div class="main__carousel-third-product-about-product-description main__carousel-about-product-description">
 							<p class="main__carousel-about-product-description-text">
 								<span class="main__carousel-third-product-about-product-value main__carousel-about-product-value">800 м</span>
-								<span class="main__carousel-first-product-about-product-type main__carousel-about-product-type">Дальность полета</span>
+								<span class="main__carousel-third-product-about-product-type main__carousel-about-product-type">Дальность полета</span>
 							</p>
-							<p class="main__carousel-about-product-description-text">
+							<p class="main__carousel-about-product-description-text main__carousel-third-active">
 								<span class="main__carousel-third-product-about-product-value main__carousel-about-product-value">50 м</span>
-								<span class="main__carousel-first-product-about-product-type main__carousel-about-product-type">Радиус поражения</span>
+								<span class="main__carousel-third-product-about-product-type main__carousel-about-product-type">Радиус поражения</span>
 							</p>
 						</div>
 					</div>
@@ -234,9 +234,9 @@
 						<label for="main__we-list-third" class="main__we-item-list-button page-button">Кредит</label>
 
 						<div class="main__we-item-list-third main__we-item-list">
-							<h2 class="main__we-item-list-third-title main__we-item-list-title">Контакты</h2>
+							<h2 class="main__we-item-list-third-title main__we-item-list-title">Кредит</h2>
 							<p class="main__we-item-list-third-text main__we-item-list-text">
-								Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. <br> Выгодные для нашего банка, разумеется.
+								Залезть в долговую яму стало проще! Кредитные <br> консультанты подберут для вас наиболее выгодные <br> условия кредита. Выгодные для нашего банка, разумеется.
 							</p>
 						</div>
 
@@ -332,24 +332,38 @@
 
 <!-- модальный блок с картой -->
 <div class="modal-window-map">
-	<!-- здесь будет карта -->
 	
-	<span class="modal-window-map-close close">X</span>
+	<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac834a807aa6abf7fdf0b98f74200a4bbe7c36eab07c5056a36aad57a6487f473&amp;source=constructor" width="960" height="565" frameborder="0"></iframe>
+	
+	<span class="modal-window-map-close">Закрыть</span>
 </div>
-
 
 <!-- модальный блок обратной связи -->	
 <div class="modal-window-write">
+		
 	<form action="#" method="post" autocomplete="on" class="modal-window-write-form">
-		<label for="name" class="modal-window-write-form-label">Ваше имя:</label>
-		<input type="text" name="name" id="name" placeholder="Имя Фамилия" class="modal-window-write-form-input">
+			
+		<div class="modal-window-write-form-name-and-email">
+				
+			<div class="modal-window-write-form-container">
+				<label for="name" class="modal-window-write-form-label">Ваше имя:</label>
+				<input type="text" name="name" id="name" placeholder="Имя Фамилия" class="modal-window-write-form-input">
+			</div>
 
-		<label for="email" class="modal-window-write-form-label">Ваш e-mail:</label>
-		<input type="email" name="email" id="email" placeholder="email@example.com" class="modal-window-write-form-input">
-
-		<label for="letter" class="modal-window-write-form-label">Текст письма:</label>
-		<textarea name="letter" id="letter" class="modal-window-write-form-textarea"></textarea>
+			<div class="modal-window-write-form-container">
+				<label for="email" class="modal-window-write-form-label">Ваш e-mail:</label>
+				<input type="email" name="email" id="email" placeholder="email@example.com" class="modal-window-write-form-input">
+			</div>
+				
+		</div>
+			
+		<div class="modal-window-write-form-many-text-for-us">
+			<label for="letter" class="modal-window-write-form-label">Текст письма:</label>				<textarea name="letter" placeholder="В свободной форме" id="letter" class="modal-window-write-form-textarea"></textarea>
+		</div>
+			
+		<a href="#" class="modal-window-write-form-button page-button">Отправить</a>
 	</form>
-	
-	<span class="modal-window-map-close close">X</span>
+
+	<button type="button" class="modal-window-map-close">Закрыть</button>
+		
 </div>
