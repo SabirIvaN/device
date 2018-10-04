@@ -13,7 +13,7 @@
 			
 			<div class="header__content">
 				
-				<form action="#" method="POST" autocomplete="on" class="header__block header__form">
+				<form action="#" method="POST" autocomplete="on" class="header__form">
 					<input type="text" placeholder="Поиск по сайту" class="header__form-input">
 					<button type="submit" class="header__form-button">Найти</button>
 				</form>
@@ -277,8 +277,8 @@
 					</p>
 					<ul class="main__about-us-list">
 						<li class="main__about-us-list-item">Деловый Линии</li>
-						<li class="main__about-us-list-item">Авторейдеринг</li>
-						<li class="main__about-us-list-item">ЖелДор Экспедиция</li>
+						<li class="main__about-us-list-item">Автотрейдинг</li>
+						<li class="main__about-us-list-item">ЖелДорЭкспедиция</li>
 					</ul>
 					<a href="#" class="main__about-us-and-contacts-us-button page-button">Подробнее о нас</a>
 				</div>
@@ -288,8 +288,8 @@
 					<p class="main__contacts-us-text">
 						Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
 					</p>
-					<a href="#" class="main__contacts-us-map"><img src="img/map.png" alt="Карта" width="560" height="222" class="main__contacts-us-map-image"></a>
-					<a href="#" class="main__about-us-and-contacts-us-button page-button">Напишите нам</a>
+					<a href="#" id="modal-map-link" class="main__contacts-us-map"><img src="img/map.png" alt="Карта" width="560" height="222" class="main__contacts-us-map-image"></a>
+					<a href="#" id="modal-about-us-link" class="main__about-us-and-contacts-us-button page-button">Напишите нам</a>
 				</div>
 			</section>
 		</main>
@@ -326,12 +326,14 @@
 				<a href="#" class="footer__social-network-link--htmlacademy">HTML Academy</a>
 			</div>
 		</footer>
+		
+		<script src="js/main.js"></script>
 	</body>
 </html>
 
 
 <!-- модальный блок с картой -->
-<div class="modal-window-map">
+<div class="modal-window-map" id="modal-window-map">
 	
 	<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac834a807aa6abf7fdf0b98f74200a4bbe7c36eab07c5056a36aad57a6487f473&amp;source=constructor" width="960" height="565" frameborder="0"></iframe>
 	
@@ -339,7 +341,7 @@
 </div>
 
 <!-- модальный блок обратной связи -->	
-<div class="modal-window-write">
+<div class="modal-window-write" id="modal-window-write">
 		
 	<form action="#" method="post" autocomplete="on" class="modal-window-write-form">
 			
