@@ -1,13 +1,25 @@
-// JavaScript Document
+var linkMap = document.querySelector("#main__contacts-us-map");
+var formMap = document.querySelector("#modal-window-map");
+var closeMap = document.querySelector("#modal-window-map-close");
 
-var openFormLink = document.querySelector('#modal-map-link');
-var modal = document.querySelector('#modal-window-map');
-var closingCross = document.querySelector('#modal-window-map-close');
-
-openFormLink.addEventListener('click', function() {
-   modal.classList.add('form-block');
+linkMap.addEventListener('click', function() {
+	event.preventDefault();
+	formMap.classList.add('modal-window-map-show');
 });
 
-closingCross.addEventListener('click', function() {
-    contactForm.classList.add('form-block');
+closeMap.addEventListener('click', function() {
+	formMap.classList.remove('modal-window-map-show');
 });
+
+var linkWrite = document.querySelector("#main__contacts-us-button");
+var formWrite = document.querySelector("#modal-window-write");
+var closeWrite = document.querySelector("#modal-window-write-close");
+
+linkWrite.addEventListener('click', function() {
+	event.preventDefault();
+	formWrite.classList.add("modal-window-write-show");
+})
+
+closeWrite.addEventListener('click', function() {
+	formWrite.classList.remove('modal-window-write-show');
+})

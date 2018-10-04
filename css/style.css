@@ -80,6 +80,8 @@ body {
 	height: 7.85px;
 	
 	background-color: #ffc600;
+	
+	transition: all 100ms;
 }
 
 .page-button:hover::before {
@@ -130,6 +132,8 @@ header {
 	text-transform: uppercase;
 	text-decoration: none;
 	line-height: 47px;
+	
+	transition: opacity 100ms;
 }
 
 .header__logo:hover {
@@ -196,6 +200,8 @@ header {
 	background: none;
 	
 	outline: transparent 0;
+	
+	transition: border 100ms;
 }
 
 .header__form-button {
@@ -209,6 +215,8 @@ header {
 	background: none;
 	border: 2px solid #000000;
 	outline: transparent 0;
+	
+	transition: border 99ms, color 99ms, opacity 99ms;
 }
 
 .header__form-input:hover {
@@ -277,6 +285,8 @@ header {
 	font-family: "OpenSans Light", "Arial", "Helvetica", sans-serif;
 	text-decoration: none;
 	line-height: 15px;
+	
+	transition: opacity 100ms;
 }
 
 .header__user-area-link--exit {
@@ -339,6 +349,8 @@ header {
 	letter-spacing: 3.5px;
 	line-height: 30px;
 	font-weight: 500;
+	
+	transition: opacity 100ms;
 }
 
 .header__catalog {
@@ -353,6 +365,8 @@ header {
 	width: 1160px;
 	
 	left: 0px;
+	
+	transition: opacity 100ms, border 100ms, color 100ms;
 }
 
 .header__catalog-link:hover+.header__catalog {
@@ -456,6 +470,8 @@ header {
 	letter-spacing: 3.5px;
 	line-height: 24px;
 	font-weight: 500;
+	
+	transition: opacity 100ms;
 }
 
 .header__service-link--delivery {
@@ -502,6 +518,8 @@ header {
 			background-image: url("../img/slider-button-empty.svg");
 			background-repeat: no-repeat;
 			background-size: 12px 12px;
+			
+			transition: all 30ms;
 		}
 
 		.main__carousel-radio:checked+.main__carousel-label {
@@ -723,6 +741,8 @@ header {
 			margin-bottom: 33px;
 
 			background-color: #f7e296;
+			
+			transition: all 100ms;
 		}
 
 		.main__features-item:hover .main__features-item-background {
@@ -731,10 +751,14 @@ header {
 
 		.main__features-item:active .main__features-item-image {
 			opacity: 0.3;
+			
+			transition: all 100ms;
 		}
 
 		.main__features-item:active .main__features-item-value {
 			opacity: 0.3;
+			
+			transition: all 100ms;
 		}
 
 		.main__features-item-image--virtual {
@@ -1162,6 +1186,8 @@ header {
 			letter-spacing: 0.01px;
 			
 			opacity: 0.3;
+			
+			transition: opacity 100ms;
 		}
 
 		.main__header-breadcrumbs-link:hover {
@@ -1271,6 +1297,8 @@ header {
 			font-size: 14px;
 			opacity: 0.3;
 			vertical-align: bottom;
+			
+			transition: opacity 100ms;
 		}
 
 		.main__wrapper-content-sorting-list-item-link:hover {
@@ -1303,6 +1331,8 @@ header {
 			height: 10px;
 			
 			opacity: 0.3;
+			
+			transition: opacity 100ms;
 		}
 
 		.main__wrapper-arrows-tr:hover {
@@ -1740,6 +1770,8 @@ header {
 			
 			width: 140px;
 			height: 70px;
+			
+			transition: all 100ms;
 		}
 
 		.main__products-catalog-paginator-back:hover {
@@ -1770,6 +1802,8 @@ header {
 			text-decoration: none;
 			text-transform: uppercase;
 			letter-spacing: 4px;
+			
+			transition: all 100ms;
 		}
 
 		.main__products-catalog-paginator-page-two, .main__products-catalog-paginator-page-three {
@@ -1793,6 +1827,8 @@ header {
 			height: 70px;
 			
 			text-align: center;
+			
+			transition: all 100ms;
 		}
 
 		.main__products-catalog-paginator-next:hover {
@@ -1835,6 +1871,8 @@ header {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-family: "Gilroy ExtraBold", "Arial", "Helvetica", sans-serif;
+	
+	transition: 100ms;
 }
 
 .footer__logo-link:hover {
@@ -1888,6 +1926,8 @@ header {
 	text-decoration: none;
 	
 	margin-left: 10px;
+	
+	transition: opacity 100ms;
 }
 
 .footer__user-link--exit {
@@ -1966,6 +2006,8 @@ header {
 	letter-spacing: 4px;
 	font-family: "Gilroy ExtraBold", "Arial", "Helvetica", sans-serif;
 	font-weight: 500;
+	
+	transition: opacity 100ms;
 }
 
 .footer__menu-link:nth-child(1) {
@@ -2017,6 +2059,8 @@ header {
 	justify-content: space-between;
 	width: 155px;
 	margin-left: 95px;
+	
+	transition: opacity 100ms;
 }
 
 .footer__social-network-list-item-link {
@@ -2030,6 +2074,8 @@ header {
 	opacity: 0.3;
 	
 	margin-right: 15px;
+	
+	transition: opacity 100ms;
 }
 
 .footer__social-network-list-item-link:hover {
@@ -2059,6 +2105,8 @@ header {
 	font-size: 0;
 	
 	background: url(../img/logo-html.svg) no-repeat;
+	
+	transition: opacity 100ms;
 }
 
 .footer__social-network-link--htmlacademy:hover {
@@ -2115,6 +2163,8 @@ header {
 			cursor: pointer;
 
 			outline: 0 transparent;
+			
+			transition: opacity 100ms;
 		}
 
 		.modal-window-map-close:hover {
@@ -2123,6 +2173,10 @@ header {
 
 		.modal-window-map-close:active {
 			opacity: 0.3;
+		}
+
+		.modal-window-map-show {
+			display: block;
 		}
 
 	/* модальное окно обратной связи */
@@ -2190,6 +2244,18 @@ header {
 			background-color: #f2f2f2;
 
 			width: 360px;
+			
+			transition: all 100ms;
+		}
+
+		.modal-window-write-form-input:hover {
+			background-color: #ebebeb;
+		}
+
+		.modal-window-write-form-input:focus {
+			border: 3px solid #f7e296;
+			outline: 0 transparent;
+			background-color: #ffffff;
 		}
 
 		.modal-window-write-form-container {
@@ -2224,13 +2290,27 @@ header {
 
 			width: 100%;
 			height: 155px;
+			
+			resize: none;
+			
+			transition: all 100ms;
+		}
+
+		.modal-window-write-form-textarea:hover {
+			background-color: #ebebeb;
+		}
+
+		.modal-window-write-form-textarea:focus {
+			border: 3px solid #f7e296;
+			outline: 0 transparent;
+			background-color: #ffffff;
 		}
 
 		.modal-window-write-form-button {
 			margin-bottom: 20px;
 		}
 
-		.modal-window-map-close {
+		.modal-window-write-close {
 			display: block;
 
 			position: absolute;
@@ -2254,18 +2334,18 @@ header {
 			cursor: pointer;
 
 			outline: 0 transparent;
+			
+			transition: opacity 100ms;
 		}
 
-		.modal-window-map-close:hover {
+		.modal-window-write-close:hover {
 			opacity: 1;
 		}
 
-		.modal-window-map-close:active {
+		.modal-window-write-close:active {
 			opacity: 0.3;
 		}
 
-/* скрытие модальных окон */
-
-.form-block {
-	display: block;
-}
+		.modal-window-write-show {
+			display: block;
+		}

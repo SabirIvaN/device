@@ -2,7 +2,10 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8">
-		<title>HTML Academy: Девайс</title>
+		<meta name="description" content="Интернет-магазин хипстерской электроники Device">
+		<meta name="keywords" contant="Device, хипстерская электроника, виртуальная реальность, моноподы для селфи, экшн-камера, фитнес-браслеты, умные часы, квадракоптеры">
+		<title>Device | Главная</title>
+		<link rel="icon" href="img/favicon.ico">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
@@ -280,7 +283,7 @@
 						<li class="main__about-us-list-item">Автотрейдинг</li>
 						<li class="main__about-us-list-item">ЖелДорЭкспедиция</li>
 					</ul>
-					<a href="#" class="main__about-us-and-contacts-us-button page-button">Подробнее о нас</a>
+					<a href="#" id="main__about-us-and-contacts-us-button" class="main__about-us-and-contacts-us-button page-button">Подробнее о нас</a>
 				</div>
 				<div class="main__contacts-us">
 					<div class="main__contacts-us-black-line"></div>
@@ -288,8 +291,8 @@
 					<p class="main__contacts-us-text">
 						Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
 					</p>
-					<a href="#" id="modal-map-link" class="main__contacts-us-map"><img src="img/map.png" alt="Карта" width="560" height="222" class="main__contacts-us-map-image"></a>
-					<a href="#" id="modal-about-us-link" class="main__about-us-and-contacts-us-button page-button">Напишите нам</a>
+					<a href="#" id="main__contacts-us-map" class="main__contacts-us-map"><img src="img/map.png" alt="Карта" width="560" height="222" class="main__contacts-us-map-image"></a>
+					<a href="#" id="main__contacts-us-button" class="main__about-us-and-contacts-us-button page-button">Напишите нам</a>
 				</div>
 			</section>
 		</main>
@@ -327,45 +330,44 @@
 			</div>
 		</footer>
 		
+		<!-- модальный блок с картой -->
+		<div class="modal-window-map" id="modal-window-map">
+
+			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac834a807aa6abf7fdf0b98f74200a4bbe7c36eab07c5056a36aad57a6487f473&amp;source=constructor" width="960" height="565" frameborder="0"></iframe>
+
+			<span class="modal-window-map-close" id="modal-window-map-close">Закрыть</span>
+		</div>
+		
+		<!-- модальный блок обратной связи -->	
+		<div class="modal-window-write" id="modal-window-write">
+
+			<form action="#" method="post" autocomplete="on" class="modal-window-write-form">
+
+				<div class="modal-window-write-form-name-and-email">
+
+					<div class="modal-window-write-form-container">
+						<label for="name" class="modal-window-write-form-label">Ваше имя:</label>
+						<input type="text" name="name" id="name" placeholder="Имя Фамилия" class="modal-window-write-form-input">
+					</div>
+
+					<div class="modal-window-write-form-container">
+						<label for="email" class="modal-window-write-form-label">Ваш e-mail:</label>
+						<input type="email" name="email" id="email" placeholder="email@example.com" class="modal-window-write-form-input">
+					</div>
+
+				</div>
+
+				<div class="modal-window-write-form-many-text-for-us">
+					<label for="letter" class="modal-window-write-form-label">Текст письма:</label>			<textarea name="letter" placeholder="В свободной форме" id="letter" class="modal-window-write-form-textarea"></textarea>
+				</div>
+
+				<a href="#" class="modal-window-write-form-button page-button">Отправить</a>
+			</form>
+
+			<span id="modal-window-write-close" class="modal-window-write-close">Закрыть</span>
+
+		</div>
+		
 		<script src="js/main.js"></script>
 	</body>
 </html>
-
-
-<!-- модальный блок с картой -->
-<div class="modal-window-map" id="modal-window-map">
-	
-	<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac834a807aa6abf7fdf0b98f74200a4bbe7c36eab07c5056a36aad57a6487f473&amp;source=constructor" width="960" height="565" frameborder="0"></iframe>
-	
-	<span class="modal-window-map-close">Закрыть</span>
-</div>
-
-<!-- модальный блок обратной связи -->	
-<div class="modal-window-write" id="modal-window-write">
-		
-	<form action="#" method="post" autocomplete="on" class="modal-window-write-form">
-			
-		<div class="modal-window-write-form-name-and-email">
-				
-			<div class="modal-window-write-form-container">
-				<label for="name" class="modal-window-write-form-label">Ваше имя:</label>
-				<input type="text" name="name" id="name" placeholder="Имя Фамилия" class="modal-window-write-form-input">
-			</div>
-
-			<div class="modal-window-write-form-container">
-				<label for="email" class="modal-window-write-form-label">Ваш e-mail:</label>
-				<input type="email" name="email" id="email" placeholder="email@example.com" class="modal-window-write-form-input">
-			</div>
-				
-		</div>
-			
-		<div class="modal-window-write-form-many-text-for-us">
-			<label for="letter" class="modal-window-write-form-label">Текст письма:</label>				<textarea name="letter" placeholder="В свободной форме" id="letter" class="modal-window-write-form-textarea"></textarea>
-		</div>
-			
-		<a href="#" class="modal-window-write-form-button page-button">Отправить</a>
-	</form>
-
-	<button type="button" class="modal-window-map-close">Закрыть</button>
-		
-</div>
