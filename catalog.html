@@ -5,14 +5,14 @@
 		<meta name="format-detection" content="telephone=no">
 		<title>Device | Каталог</title>
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.min.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header class="header">
 			<a href="index.html" class="header__logo">Device</a>
 			<div class="header__content">
 				<form action="#" method="POST" autocomplete="on" class="header__form">
-					<input type="text" placeholder="Поиск по сайту" class="header__form-input">
+					<input type="search" placeholder="Поиск по сайту" class="header__form-input">
 					<button type="submit" class="header__form-button">Найти</button>
 				</form>
 
@@ -108,7 +108,7 @@
 			<!-- фильтр и каталог товаров -->
 			<div class="main__catalog">
 				<div class="main__catalog-product">
-					<aside class="main__catalog-product-filters">
+					<form class="main__catalog-product-filters">
 						
 						<div class="main__catalog-product-filter-cost">
 							<div class="main__catalog-product-black-line main__catalog-product-black-line-cost"></div>
@@ -155,7 +155,7 @@
 							<label for="no" class="main__catalog-filter-bluetooth-label">Нет</label>
 						</div>
 						<a href="#" class="main__catalog-product-filters-button page-button">Показать</a>
-					</aside>
+					</form>
 
 					<!-- перечень товаров -->
 					<section class="main__products-catalog">
