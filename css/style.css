@@ -98,7 +98,7 @@ header {
 }
 .header__logo {
 	position: absolute;
-	top: -56px;
+	top: -24px;
 	left: 57px;
 	color: #000000;
 	letter-spacing: 0.5px;
@@ -1367,6 +1367,9 @@ header {
 	height: 23px;
 	background-image: url("../img/filter-button.svg");
 }
+.main__catalog-filter-cost-begin, .main__catalog-filter-cost-end {
+	margin-top: 3px;
+}
 .main__catalog-product-filter-color {
 	display: -webkit-box;
   	display: -ms-flexbox;
@@ -1384,7 +1387,7 @@ header {
 	font-size: 18px;
 	font-family: "Gilroy ExtraBold", "Arial", "Helvetica", sans-serif;
 	margin: 0;
-	margin-bottom: 23px;
+	margin-bottom: 20px;
 	line-height: 24px;
 	letter-spacing: 0.1px;
 }
@@ -1416,6 +1419,12 @@ header {
 	background-image: url("../img/checkbox-on.svg");
 	background-repeat: no-repeat;
 }
+.main__catalog-product-filter-color-label:hover::before {
+	-webkit-opacity: 0.6;
+	-o-opacity: 0.6;
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+}
 .main__catalog-filter-bluetooth {
 	display: -webkit-box;
   	display: -ms-flexbox;
@@ -1423,7 +1432,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	margin-bottom: 25px;
+	margin-bottom: 30px;
 }
 .main__catalog-product-black-line-bluetooth {
 	margin-bottom: 10px;
@@ -1432,7 +1441,7 @@ header {
 	font-size: 18px;
 	font-family: "Gilroy ExtraBold", "Arial", "Helvetica", sans-serif;
 	margin: 0;
-	margin-bottom: 22px;
+	margin-bottom: 20px;
 	line-height: 24px;
 	letter-spacing: 0.1px;
 }
@@ -1444,10 +1453,16 @@ header {
     line-height: 23px;
     position: relative;
     display: block;
-    width: 160px;
-    margin-bottom: 7px;
+    width: 50px;
+    margin-bottom: 8px;
     padding: 5px 0;
     padding-left: 40px;
+}
+.main__catalog-filter-bluetooth-label:hover::before {
+	-webkit-opacity: 0.6;
+	-o-opacity: 0.6;
+	-moz-opacity: 0.6;
+	opacity: 0.6;
 }
 .main__catalog-filter-bluetooth-label::before {
 	content: "";
