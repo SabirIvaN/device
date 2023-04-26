@@ -6,3 +6,5 @@ To implement the frontend of the project, only native technologies were used:
 * HTML
 * CSS
 * JavaScript
+
+The project was carried out in accordance with the PixelPerfect methodology.
