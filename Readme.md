@@ -7,4 +7,4 @@ To implement the frontend of the project, only native technologies were used:
 * CSS
 * JavaScript
 
-The project was written using flexboxes. Made in accordance with the Pixel Perfect methodology and BEM. The normalize.css file is used for cross-browser compatibility. All css files are minimized.
+The project was written using flexboxes. Made in accordance with the Pixel Perfect methodology and BEM. The normalize.css file is used for cross-browser compatibility. All css and js files are minimized.
